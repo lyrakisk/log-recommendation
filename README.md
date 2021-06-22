@@ -1,5 +1,5 @@
 # Recommending Log Placement Based on Code Vocabulary
->  Reproducibility package for my Bachelor's Research Project. 
+>  Reproducibility package for my BSc Research Project. 
 
 This repository contains the code that was used to conduct my Bachelor's [Research Project](/docs/log_recommendation_paper.pdf). For now, the code is suitable to analyze only Java projects.
 
@@ -29,3 +29,4 @@ The process that was followed consists of 3 steps:
   - `body`: the method's body 
 
 ### 3. Run Experiments
+- Run `./bin/extract-data source destination`
