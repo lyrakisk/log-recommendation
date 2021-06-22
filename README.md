@@ -1,34 +1,32 @@
 # Recommending Log Placement Based on Code Vocabulary
->  Reproducibility package for my Bachelor's Research Project. 
+>  Reproducibility package for my BSc Research Project. 
 
-This repository contains the code that was used to conduct my Bachelor's [Research Project](/docs/log_recommendation_paper.pdf)
-Getting started is easy as ABC:
-1. Run `./utilities/download-project.sh` to download the subject
-2. Run `./utilities/install.sh` to build and "install" the src2ML utility
-3. Run `./bin/src2ml download/cloudstack` to classify the source files
+This repository contains the code that was used to conduct my Bachelor's [Research Project](/docs/log_recommendation_paper.pdf). For now, the code is suitable to analyze only Java projects.
 
-[src2ML](src2ML) is an utility that we will be working on to analyze Java projects.
-* The file [App.java](src2ML/src/main/java/nl/tudelft/ewi/se/src2ml/App.java) is the current app entry point
-* The package [src2ml.project](src2ML/src/main/java/nl/tudelft/ewi/se/src2ml/project) contains API and
-  classes to help you retrieve information from a java project.
-  If you feel the need to do so, you can reuse these base classes to write your own Main class.
-
-What's next?
-* So far we are only retrieving the path of java files and classifying them.
-  **How can we extend the existing code to analyze the retrieved source files?**
-
-
-# Extract classes from the repository
-- Run `./utilities/extract-classes source destination`
-- We separate this step so that someone can change the script to include test classes. 
-
-# extract-data 
-
-## requirements
+## Requirements
 - Java 11
+- Python 3.6.9
 
 ## Installation
 - Run `./utilities/install.sh`
 
-## Run
+## Usage
+The process that was followed consists of 3 steps: 
+1. Extract the source code classes from the studied repository. 
+2. Extract Java Methods from the classes. 
+3. Run experiments.
+
+### 1. Extract classes from the studied repository
+- Run `./utilities/extract-classes path-to-repository destination`
+- The result of this step is a folder created at the selected destination with all the source code classes in the studied repository.
+### 2. Extract Java Methods from the classes.  
+- Run `./bin/extract-data source destination`
+- The result of this step is a JSON file that contains all the extracted methods along with the following information:
+  - `LOC`: lines of code
+  - `logged`: True if the method is logged
+  - `name`: name of the method
+  - `statements`: an array that contains the method's statements
+  - `body`: the method's body 
+
+### 3. Run Experiments
 - Run `./bin/extract-data source destination`
