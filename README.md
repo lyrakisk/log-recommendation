@@ -1,6 +1,7 @@
-# ML-Based Logging Recommenders
-> Making Logging Great Again by leveraging source code analysis and ML/DL!
+# Recommending Log Placement Based on Code Vocabulary
+>  Reproducibility package for my Bachelor's Research Project. 
 
+This repository contains the code that was used to conduct my Bachelor's [Research Project](/docs/log-recommendation-paper.pdf)
 Getting started is easy as ABC:
 1. Run `./utilities/download-project.sh` to download the subject
 2. Run `./utilities/install.sh` to build and "install" the src2ML utility
