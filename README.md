@@ -8,7 +8,8 @@ This repository contains the code that was used to conduct my Bachelor's [Resear
 - Python 3.6.9
 
 ## Installation
-- Run `./utilities/install.sh`
+- Run `./utilities/install.sh` to install the extract-data tool. 
+- todo (python requirements install)
 
 ## Usage
 The process that was followed consists of 3 steps: 
