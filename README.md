@@ -9,13 +9,15 @@ This repository contains the code that was used to conduct my Bachelor's [Resear
 
 ## Installation
 - Run `./utilities/install.sh` to install the extract-data tool. 
-- todo (python requirements install)
+- Run `pip install -r requirements.txt` in your Python environment to install the dependencies. 
 
 ## Usage
 The process that was followed consists of 3 steps: 
 1. Extract the source code classes from the studied repository. 
 2. Extract Java Methods from the classes. 
 3. Run experiments.
+
+**Note:** Steps 1,2 can be skipped if you wish to use our [datasets](/data) and just run the experiements.
 
 ### 1. Extract classes from the studied repository
 - Run `./utilities/extract-classes path-to-repository destination`
@@ -32,4 +34,4 @@ The process that was followed consists of 3 steps:
 ### 3. Run Experiments
 - Run `./bin/extract-data dataset_path results_destination_folder`
 - This step can take a significant amount of time if the dataset is large. In an average consumer's laptop, the Hadoop dataset, took ~45 minutes to finish all the experiments. 
-- The results are 3 csv files that correspond to the Research Questions stated in the paper. Examples of these files can be found [here](/data/results).
+- The results are 3 csv files that correspond to the Research Questions stated in the paper. Sample results can be found [here](/data/results).
