@@ -1,7 +1,6 @@
 download/
 bin/
 lib/
-data/
 
 # IDE specific folders
 .idea
