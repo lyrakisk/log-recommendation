@@ -30,4 +30,6 @@ The process that was followed consists of 3 steps:
   - `body`: the method's body 
 
 ### 3. Run Experiments
-- Run `./bin/extract-data source destination`
+- Run `./bin/extract-data dataset_path results_destination_folder`
+- This step can take a significant amount of time if the dataset is large. In an average consumer's laptop, the Hadoop dataset, took ~45 minutes to finish all the experiments. 
+- The results are 3 csv files that correspond to the Research Questions stated in the paper. Examples of these files can be found [here](/data/results).
