@@ -1,7 +1,7 @@
 # Recommending Log Placement Based on Code Vocabulary
 >  Reproducibility package for my BSc Research Project. 
 
-This repository contains the code that was used to conduct my Bachelor's [Research Project](/docs/log_recommendation_paper.pdf). For now, the code is suitable to analyze only Java projects.
+This repository contains the code that was used to conduct my Bachelor's [Research Project](https://repository.tudelft.nl/islandora/object/uuid:6c76c94e-2b89-4712-9125-ccc100f764b5?collection=education). For now, the code is suitable to analyze only Java projects.
 
 ## Requirements
 - Java 11
